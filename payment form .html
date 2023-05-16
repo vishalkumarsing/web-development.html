@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment form.css">
+    <style>
+        
+
+body{
+    margin: 15px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+    background-color: lightskyblue;
+    
+
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px ;
+    border: 2px solid rgb(29, 45, 60);
+    border-radius:2px ;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="card number"],
+input[type="date"],
+select,
+textarea{
+    width: 80%;
+    padding: 12px;
+    border: 1px rgb(120, 85, 85);
+    border-radius: 5px;
+    margin: 8px;
+}
+.main{
+    text-align: center;
+
+}
+input[type="submit"]{
+    background-color: green;
+    color: beige;
+    padding: 12px;
+    border:none;
+    border-radius: 1px;
+    cursor: zoom-in;
+    width: 30%;
+}
+input[type="submit"] :hover{
+    background-color: aquamarine;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="container" >
+    <h1 class="main">payment form</h1>
+    <h2>contact information</h2>
+    <p>NAME: <input type="text" name="name"></p>
+    <p>
+        GENDER
+        <br>
+        male: <input type="radio" name="gender" id="101">
+        female: <input type="radio" name="gender" id="102">
+        other: <input type="radio" name="gender">
+    
+    <p>
+        <p>
+            ADDRESS:
+            <br>
+            <textarea placeholder="enter your address" name="enter your address" id="" cols="30" rows="10"></textarea>
+        </p>
+        
+         
+    <p>EMAIL: <input type="email" name="email"></p>
+    <p>CARD TYPE:
+        <select name="card type" id="card type">
+            <option value="">select a card</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="mastercard">mastercard</option>
+            <option value="slice">slice</option>
+            <option value="rupay">rupay</option>
+             
+
+        </select>
+    </p>
+    <h2>PAYMENT INFORMATION</h2>
+    <p>
+        card number: <input type="card number" name="card number">
+    </p>
+    <p>
+        exiration date: <input type="date" name="date" id="">
+    </p>
+    <p>
+        password: <input type="password" name="password">
+    </p>
+    <br>
+    <br>
+     <input type="submit" value="paay now">
+    </div>
+</body>
+
+</html>
